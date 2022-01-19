@@ -12,7 +12,7 @@ const App = ({ history, onSignIn }) => {
     <div>
       <StylesProvider generateClassName={generateClassName}>
         <Router history={history}>
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<div>Loading....</div>}>
             <Switch>
               <Route exact path="/auth/signin">
                 <Signin onSignIn={onSignIn} />
